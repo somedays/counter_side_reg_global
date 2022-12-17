@@ -94,7 +94,7 @@ input,button {font-family: 'Barlow', sans-serif;}
 .main_gallery .owl-carousel .owl-dots button.active {background-color:#ac030b;height:12px;}
 
 .main_letter {position:relative;margin:0 auto;width:100%;max-width:2500px;height:1415px;overflow:hidden;display:flex;justify-content:center;background:url(../img/bg_letter.webp) 50% 0 no-repeat;}
-.main_letter .letter_area {position: absolute;top: 394px;left: 50%;width: 630px;margin-left: -692px;color: #fff;}
+.main_letter .letter_area {position: absolute;top: 418px;left: 50%;width: 630px;margin-left: -692px;color: #fff;}
 .main_letter .letter_area .letter_tt {font-size:35px;margin-bottom:30px;font-weight:800;}
 .main_letter .letter_area p {margin:0;font-size: 22px;line-height:27px;font-weight:400;}
 
