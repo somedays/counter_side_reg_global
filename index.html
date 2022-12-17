@@ -13,7 +13,6 @@
     <div class="main_visual">
         <div class="video_container">
             <div class="main_visual_ctn">
-                <div class="visual_logo"><img src="resources/img/main_visual_logo.webp"></div>
                 <div class="visual_ctns">
                     <div class="visual_text"><img src="resources/img/main_visual_title.webp"></div>
                     <div class="visual_btn"><a href="#Form"><img src="resources/img/main_visual_btn.webp"></a></div>
@@ -112,15 +111,15 @@
         </div>
         <div class="ctn_area"><img src="resources/img/m/letter_area.webp"></div>
     </div>
-    <div class="main_nav">
+    <div class="main_nav on">
         <div class="nav_logo"><a href="#Home"><img src="resources/img/gnb_logo.webp" alt="MYTH X COUNTER SIDE"></a></div>
         <div class="nav_items">
-            <a href="#Home">Home</a>
-            <a href="#Form" class="active">Pre-Registration</a>
-            <a href="#Reward">Rewards</a>
-            <a href="#Schedule">Schedule</a>
-            <a href="#Intro">About</a>
-            <a href="#Letter">Head PD’s Letter</a>
+            <a href="#Home" class="nav_item">Home</a>
+            <a href="#Form"  class="nav_item">Pre-Registration</a>
+            <a href="#Reward" class="nav_item">Rewards</a>
+            <a href="#Schedule" class="nav_item">Schedule</a>
+            <a href="#Intro" class="nav_item">About</a>
+            <a href="#Letter" class="nav_item">Head PD’s Letter</a>
             <div class="lang">
                 <div onclick="location.href('https://kr-pre.counterside.com/');alert('A')">KOR</div>
                 <div href="https://kr-pre.counterside.com/" class="active">ENG</div>
@@ -135,12 +134,12 @@
         </div>
         <div class="nav_body">
             <div class="nav_items">
-                <a href="#Home">Home</a>
-                <a href="#Form" class="active">Pre-Registration</a>
-                <a href="#Reward">Rewards</a>
-                <a href="#Schedule">Schedule</a>
-                <a href="#Intro">About</a>
-                <a href="#Letter">Head PD’s Letter</a>
+                <a href="#Home" class="nav_item">Home</a>
+                <a href="#Form" class="nav_item">Pre-Registration</a>
+                <a href="#Reward" class="nav_item">Rewards</a>
+                <a href="#Schedule" class="nav_item">Schedule</a>
+                <a href="#Intro" class="nav_item">About</a>
+                <a href="#Letter" class="nav_item">Head PD’s Letter</a>
             </div>
             <div class="nav_links">
                 <a href="https://twitter.com/CountersideKR" target="_blank"><img src="resources/img/m/icon_twitter.webp"></a>
@@ -195,7 +194,7 @@ $(window).scroll(function(){
       scroll = $(window).scrollTop()
       goTop = $('.go_top');
 
-  if (scroll >= 1200) { 
+  if (scroll >= 0) { 
     gnb.addClass('on');
     goTop.addClass('on');
   }
@@ -205,23 +204,23 @@ $(window).scroll(function(){
   }
 
   if( scroll >= $('#Letter').offset().top) {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(5)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(5)').addClass('active');
     } else if( scroll >= $('#Intro').offset().top) {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(4)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(4)').addClass('active');
     } else if( scroll >= $('#Schedule').offset().top) {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(3)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(3)').addClass('active');
     } else if( scroll >= $('#Reward').offset().top) {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(2)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(2)').addClass('active');
     } else if( scroll >= $('#Form').offset().top) {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(1)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(1)').addClass('active');
     } else {
-        $('.nav_items a').removeClass('active');
-        $('.nav_items a:eq(0)').addClass('active');
+        $('.nav_items .nav_item').removeClass('active');
+        $('.nav_items .nav_item:eq(0)').addClass('active');
     }
 
 
